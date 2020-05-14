@@ -1,14 +1,23 @@
-# Project - e-commerce app
+# Project - E-Commerce App
+
+##  Deployment instructions on local machine
+
+```git 
+ -> git clone git@github.com:zrakhimov/e-commerce-app.git
+ -> cd e-commerce-app
+ -> mkdir config/keys.env
+ * edit keys.env to include the following
+    SEND_GRID_API_KEY=<api_key_here>
+    PORT=<port_number_here>
+    MONGODB_CONNECTION_STRING=<mongodb_connection_string_here
+    SESSION_SECRET=<secret_string_here>
+```
 
 
-#  The link to your remote GIT Project (Github link) 
-
-	https://github.com/zrakhimov/e-commerce-app
-
-#  A Link to your deployed application in Heroku (Heroku domain name)
+##  A Link to deployed application in Heroku (Heroku domain name)
 
 	
-#  Your Inventory Clerk credentials details (username/email and password).
+##  Your Inventory Clerk credentials details (username/email and password).
 
 	E-mail: test@test.com
 	Password: iop890iop
