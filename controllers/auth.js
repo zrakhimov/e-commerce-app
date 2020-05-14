@@ -92,9 +92,9 @@ router.post("/register", (req,res) => {
         .then(()=> {
             const msg = {
                 to: form.email,
-                from: 'mokhinur.rakhimov@gmail.com',
+                from: 'zokir.rakhimov@gmail.com',
                 subject: 'Welcome!',
-                text: 'Welcome to MoonShine!',
+                text: 'Welcome to our shop!',
                 html: '<strong>High Quality Products. SALE ON NOW!</strong>',
               };
               sgMail.send(msg)

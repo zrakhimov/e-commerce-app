@@ -7,7 +7,6 @@
 
 #  A Link to your deployed application in Heroku (Heroku domain name)
 
-	https://seneca-web322-a3-5.herokuapp.com/
 	
 #  Your Inventory Clerk credentials details (username/email and password).
 
