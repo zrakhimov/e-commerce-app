@@ -1,0 +1,38 @@
+<main>
+    <section class="banner">
+        <img src="img/banner.jpg"></a>
+    </section>
+    <br><br><br>
+    <section>
+        <h2>Categories</h2>
+        <div class="categories">
+            {{#each categories}}
+                <div class="categories-box">
+                    <span>
+                        <a href="{{this.link}}"><img src="{{this.thumb}}" width="100px" height="100px"></a>
+                    </span>
+                    <h3>
+                        {{this.title}}
+                    </h3>
+                </div>
+            {{/each}}   
+        </div> 
+    </section>
+    <br><br><br>
+    <section id="bestsellers_id">
+        <h2>Best Sellers</h2>
+        <div class="bestsellers">
+             {{#each bestsellers}}
+             <div class="bestsellers-box">
+                <p>{{this.name}}</p>
+                <h6>{{this.description}}</h6>
+                <span>
+                    <a href="/products/details/{{this.id}}"><img src="img/{{this.thumb}}" width="300px" height="300px"></a>
+                </span>
+                <p id="price">{{this.price}}</p>
+             </div>
+            {{/each}}   
+        </div>
+    </section>
+    <br><br><br>
+</main>

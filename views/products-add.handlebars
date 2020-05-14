@@ -1,0 +1,53 @@
+<section id="products-add">
+
+<div class="container">
+<h2> Add New Product </h2>
+    <form method="POST" action="/products/add" enctype="multipart/form-data">
+    <div class="form-group">
+        <p>
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name">
+        </p>
+    </div>
+     
+        
+        <p>
+            <label class="floatLabel">Description</label>
+            <input class="form-control" type="text" id="description" name="description">
+        </p>
+        <p>
+            <label class="floatLabel">Category</label><br>
+            <select class="form-control" name="category">
+                <option value="Women's Fashion">Women's Fashion</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Jewellery">Jewellery</option>
+                <option value="Watches">Watches</option>
+            </select>
+        </p>
+        <p>
+            <label class="floatLabel">Price</label>
+            <input class="form-control" type="text" name="price" id="price">
+        </p>
+        <p>
+            <label class="floatLabel">Quantity</label>
+            <input class="form-control" type="text" name="quantity" id="quantity">
+        </p>
+        <p>
+             <label class="floatLabel">Bestseller</label><br>
+            <select class="form-control" name="bestseller">
+                <option value="true">Yes</option>
+                <option selected value="false">No</option>
+            </select>
+        </p>
+        <p>
+             <label class="floatLabel">Photo</label><br>
+            <input class="form-file-control" type="file" name="productPic" id="productPic">
+        </p>
+        <p>
+             <button type="submit" class="btn btn-danger btn-lg">Add Product</button>
+        </p>
+
+    </form>
+</div>
+</section>
+

@@ -1,0 +1,276 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffdce2 ;
+  color: #1d1d1d;
+  min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
+  
+}
+body h1 {
+  text-align: center;
+}
+
+
+
+/*========================> Navigation <=========================*/
+.navigation {
+    height: 70px;
+    background: #ff546d;
+  }
+  
+  .brand {
+    position: absolute;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+  }
+  .brand a,
+  .brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .nav-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  nav {
+    float: right;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  nav ul li a,
+  nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #ff546d;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav ul li a:hover,
+  nav ul li a:visited:hover {
+    background: #ffdce2 ;
+    color: #1d1d1d;
+  }
+  nav ul li a:not(:only-child):after,
+  nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+  }
+  nav ul li ul li {
+    min-width: 190px;
+  }
+  nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  
+
+
+  /*========================> Banner <=========================*/
+  .banner {
+    display: flex;
+    background-color: #ffbac4 ;
+  }
+  .banner img {
+    width: 100%;
+    max-width: 600px;
+    height: auto; 
+    margin: auto;
+    
+  }
+
+    /*========================> Categories <=========================*/
+
+  .categories h2 {
+    padding-left: 20px;
+  }
+  .categories {
+    padding-top: 20px;
+    background-color: #ffbac4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .categories-box {
+    padding: 10px;
+  }
+
+  .categories h3 {
+    text-align: center;
+  }
+
+  .categories span {
+    display: block;
+    text-align: center;
+  }
+
+  /*========================> Bestsellers <=========================*/
+
+  .bestsellers {
+    padding-top: 20px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .bestsellers-box, .products-box {
+    padding: 30px;
+    margin: 10px;
+    background-color: #ffbac4;
+  }
+
+  .bestsellers p , .products-class p{
+    text-align: center;
+    font-weight: 600;
+
+  }
+  .bestsellers h6, .products-class h6{
+    width: 300px;
+    font-weight: 300;
+  }
+
+
+
+
+
+ /*========================> Products <=========================*/
+ .products-class {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#products select {
+  margin: 25px;
+  width: auto;
+}
+#products input {
+  margin: 25px;
+  width: auto;
+}
+
+
+
+
+/*========================> registration/login <=========================*/
+#register form, #login form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 600px;
+  margin: 50px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+}
+#register form h2, #login form h2 {
+  margin: 0 0 50px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #1d1d1d;
+  border-bottom: solid 1px #e5e5e5;
+}
+#register form p, #login form p {
+  margin: 0 0 3em 0;
+  position: relative;
+}
+#register form input, #login form input  {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  margin: 0;
+}
+#register form input[type="text"], #login form input[type="text"],
+#register form input[type="password"] , #login form input[type="password"] {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1.6em;
+  padding: .8em .5em;
+  border-radius: 2px;
+}
+#register form input[type="text"]:focus, #login form input[type="text"]:focus,
+#register form input[type="password"]:focus , #login form input[type="password"]:focus {
+  background: #fff;
+}
+#register form span, #login form span {
+  display: block;
+  background: #F9A5A5;
+  padding: 2px 5px;
+  color: #666;
+}
+#register form input[type="submit"], #login form input[type="submit"] {
+  background: #ff546d;
+  box-shadow: 0 3px 0 0 rgba(123, 163, 73, 0.7);
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin: 2em 0 0;
+  outline: none;
+  padding: .8em 0;
+  text-shadow: 0 1px #ffbac4;
+}
+#register form input[type="submit"]:hover, #login form input[type="submit"]:hover {
+  background: ffbac4;
+  text-shadow: 0 1px 3px #ffbac4;
+}
+#register form label, #login form label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+#register form label.floatLabel, #login form label.floatLabel {
+  top: -11px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+  /*========================> Details <=========================*/
+  #details,#clerkDashboard {
+    padding-top: 50px;
+  }
+  #details select, #clerkDashboard select {
+  width: auto;
+}
+#details input, #clerkDashboard input {
+  width: auto;
+}
+
+/*========================> Footer <=========================*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d1d1d ;
+  color: white;
+  text-align: center;
+}

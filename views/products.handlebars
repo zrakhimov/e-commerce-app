@@ -1,0 +1,31 @@
+<section id="products">
+        <h1>Inventory</h1>
+        
+        <div class="form-group">
+          <form method="POST" action="/products/list">
+            <select class="form-control form-control-lg" id="category" name="category">
+                    <option selected value="all">All</option>
+                    <option name="Women's Fashion" value="Women's Fashion">Women's Fashion</option>
+                    <option name="Beauty" value="Beauty">Beauty</option>
+                    <option name="Jewellery" value="Jewellery">Jewellery</option>
+                    <option name="Watches" value="Watches">Watches</option>
+            </select>
+                <input class="form-control form-control-lg" type="submit" value="Search">
+            </form> <br><br>
+        </div>
+        <div class="products-class">
+
+             {{#each data}}
+             
+                <div class="products-box">
+                    <p>{{this.name}}</p>
+                    <h5>{{this.category}}</h5>
+                    <h6>{{this.description}}</h6>
+                    <span>
+                        <a href="/products/details/{{this.id}}"><img src="/img/{{this.thumb}}" width="300px" height="300px"></a>
+                    </span>
+                    <p id="price">${{this.price}}</p>
+                </div>
+            {{/each}}   
+        </div>
+</section>

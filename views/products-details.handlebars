@@ -1,0 +1,37 @@
+<section id="details">
+    <div class="container">
+        <div class="row">
+                <div class="col">
+                    <h2>{{this.name}}</h2>
+                    <p>Category: {{this.category}}</h2>
+                    <p>Description: {{this.description}}</p>
+                    <p id="price">Price: ${{this.price}}</p>
+                    <p id="quantity">In Stock: {{this.quantity}}</p>
+                    <div class="form-group">
+                        <form method="POST" action="/cart/{{_id}}?method=PUT">
+                            <select class="form-control form-control-lg" name="quantity">
+                                    <label class="floatLabel">Quantity</label><br>
+                                    <option selected value=1>1</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                    <option value=6>6</option>
+                                    <option value=7>7</option>
+                                    <option value=8>8</option>
+                                    <option value=9>9</option>
+                                    <option value=10>10</option>
+                            </select><br>
+                            <p>
+                                <input class="form-control form-control-lg" type="submit" value="Add to Cart">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                         <a href="{{this.link}}"><img src="/img/{{this.thumb}}" style="max-width:100%;height:auto;"></a>
+                </div>
+            </div>
+    </div>
+    
+</section>

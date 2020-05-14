@@ -1,0 +1,31 @@
+<section id="register">
+<form action="/auth/register" method="post">
+  <h2>Register</h2>
+  <!-- This will only show when SucessMessage was injected into the view -->
+			<h3 style="color:#4BB543;">{{successMessage}}</h3><br>
+        <p>
+			<label for="name" class="floatLabel">Your Name</label>
+			<input id="name" name="name" type="text" value={{retain.name}}>
+			<small class="errorMessage">{{errors.name}}</small>
+		</p>
+		<p>
+			<label for="email" class="floatLabel">Email</label>
+			<input id="email" name="email" type="text" value={{retain.email}}>
+			<small class="errorMessage">{{errors.email}}</small>
+		</p>
+		<p>
+			<label for="password" class="floatLabel">Password</label>
+			<input id="password" name="password" type="password" value={{retain.password}}>
+			<small class="errorMessage">{{errors.password}}</small>
+		</p>
+		<p>
+			<label for="confirm_password" class="floatLabel">Confirm Password</label>
+			<input id="confirm_password" name="confirm_password" type="password" value={{retain.confirm_password}}>
+			<small class="errorMessage">{{errors.confirm_password}}</small>
+		</p>
+		<p>
+			<input type="submit" value="Create My Account" id="submit">
+		</p>
+        <p><a href="/auth/login" >Already have an account ? Log in here</a></p>
+	</form>
+</section>

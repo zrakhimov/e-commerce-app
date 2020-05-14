@@ -1,0 +1,60 @@
+<section id="products-edit">
+    <div class="container">   
+        <h2> Edit {{name}} </h2>
+        <form method="POST" action="/products/edit/{{_id}}?method=PUT" enctype="multipart/form-data">
+        <div class="form-group">
+            <label  for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name" value={{name}}>
+        </div>
+         <div class="form-group">
+            <p>
+                <label class="control-label" for="description">Description</label>
+                <input class="form-control" type="text" id="description" name="description" value={{description}}>
+            </p>
+        </div>
+        <div class="form-group">
+            <p>
+                <label for="cagegory">Category</label>
+                <select class="form-control" name="category">
+                    <option value="Women's Fashion">Women's Fashion</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Jewellery">Jewellery</option>
+                    <option value="Watches">Watches</option>
+                </select>
+            </p>
+        </div>
+        <div class="form-group"></div>
+            <p>
+                <label >Price</label>
+                <input class="form-control" type="text" name="price" id="price" value={{price}}>
+            </p>
+        <div class="form-group">
+            <p>
+                <label >Quantity</label>
+                <input class="form-control" type="text" name="quantity" id="quantity" value={{quantity}}>
+            </p>
+        </div>
+        <div class="form-group">
+            <p>
+                <label>Bestseller</label>
+                <select class="form-control" name="bestseller">
+                    <option value="true">Yes</option>
+                    <option selected value="false">No</option>
+                </select>
+            </p>
+        </div>
+            <div class="form-group">
+            <p>
+                <label >Photo</label>
+                <input  class="form-control-file" type="file" name="productPic" id="productPic" required>
+            </p>
+        </div>
+            <p>
+                <button type="submit" class="btn btn-danger btn-lg">Edit Product</button>
+            </p>
+        </div>
+        </form>
+        
+    </div>
+</section>
+

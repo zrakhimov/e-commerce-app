@@ -1,0 +1,23 @@
+<section id="login">
+	
+	<form action="/auth/login" method="post">
+		<h2>Sign In</h2>
+		<!-- This will only show when SucessMessage was injected into the view -->
+			<p>
+				<label for="email" class="floatLabel">Email</label>
+				<input id="email" name="email" type="text" value={{retain.email}}>
+				<small class="errorMessage">{{errors.login}}</small>
+			</p>
+			
+			<p>
+				<label for="password" class="floatLabel">Password</label>
+				<input id="password" name="password" type="password" value={{retain.password}}>
+				<small class="errorMessage">{{errors.password}}</small>
+			</p>
+			
+			<p>
+				<input type="submit" value="Login" id="submit">
+			</p>
+			<p><a href="/auth/register" >Create an account</a></p>
+	</form>
+</section>
