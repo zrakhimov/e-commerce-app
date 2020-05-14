@@ -1,18 +1,9 @@
-# Web322 Project - e-commerce app
+# Project - e-commerce app
 
-```js
-// Name: Moonie Rakhimov
-// Seneca Student ID: 024-958-118
-// Seneca email: mshakhnazarova@myseneca.ca
-// Date of completion: April 17, 2020
-//
-// I confirm that I am the only author of this file
-//   and the content was created entirely by me.
-```
 
 #  The link to your remote GIT Project (Github link) 
 
-	https://github.com/mrakhimov/WEB322_A3-5
+	https://github.com/zrakhimov/e-commerce-app
 
 #  A Link to your deployed application in Heroku (Heroku domain name)
 

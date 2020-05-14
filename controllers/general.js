@@ -206,7 +206,7 @@ router.post("/checkout", isAuthenticated,(req,res) => {
         // SEND MAIL
         const msg = {
             to: req.session.user.email,
-            from: 'mokhinur.rakhimov@gmail.com',
+            from: 'zokir.rakhimov@gmail.com',
             subject: 'Order Summary',
             text: 'Order Summary',
             html: html
