@@ -6,11 +6,17 @@
  -> git clone git@github.com:zrakhimov/e-commerce-app.git
  -> cd e-commerce-app
  -> mkdir config/keys.env
+ ```
  * edit keys.env to include the following
     SEND_GRID_API_KEY=<api_key_here>
     PORT=<port_number_here>
-    MONGODB_CONNECTION_STRING=<mongodb_connection_string_here
+    MONGODB_CONNECTION_STRING=<mongodb_connection_string_here> 
     SESSION_SECRET=<secret_string_here>
+* run the app
+```git
+ -> npm install
+ -> npm start
+
 ```
 
 
